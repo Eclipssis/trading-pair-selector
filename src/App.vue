@@ -4,8 +4,8 @@ import { useTheme } from '@/composables/useTheme'
 import { useTradingStore } from '@/stores/tradingStore'
 import PairSelector from '@/components/PairSelector.vue'
 import SelectedPairsGrid from '@/components/PairsGrid.vue'
-import KLineChart from '@/components/KLineChart.vue'
 import HeaderBlock from '@/components/HeaderBlock.vue'
+import KlineChart from './components/KlineChart.vue'
 
 const tradingStore = useTradingStore()
 
@@ -33,7 +33,7 @@ onMounted(() => {
           <SelectedPairsGrid />
         </div>
         <div class="lg:col-span-3">
-          <KLineChart />
+          <KlineChart />
         </div>
       </div>
     </main>
